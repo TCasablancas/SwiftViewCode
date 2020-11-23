@@ -1,3 +1,40 @@
-PODFILE CHECKSUM: 89b55d9f109c61c4212b63e43eec9e8c9b8352bd
+PODS:
+  - Alamofire (4.9.1)
+  - Kingfisher (4.10.1)
+  - Nimble (9.0.0)
+  - ObjectMapper (3.3.0)
+  - Quick (3.0.0)
+  - RxSwift (5.0.1)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - Kingfisher (~> 4.0)
+  - Nimble
+  - ObjectMapper (= 3.3.0)
+  - Quick
+  - RxSwift (= 5.0.1)
+  - SnapKit (= 4.2.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Kingfisher
+    - Nimble
+    - ObjectMapper
+    - Quick
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 21e5e893d3dfd1d35f062e7b0b13d61b472b128b
 
 COCOAPODS: 1.9.3

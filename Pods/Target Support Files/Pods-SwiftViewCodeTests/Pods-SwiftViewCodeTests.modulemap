@@ -1,4 +1,4 @@
-framework module Pods_SwiftViewCodeTests {
+module Pods_SwiftViewCodeTests {
   umbrella header "Pods-SwiftViewCodeTests-umbrella.h"
 
   export *

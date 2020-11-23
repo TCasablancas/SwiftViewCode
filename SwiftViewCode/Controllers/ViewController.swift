@@ -7,14 +7,32 @@
 //
 
 import UIKit
+import SnapKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
+    lazy private var baseView: BaseView = {
+        let view = BaseView()
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setup()
     }
-
-
 }
 
+extension ViewController: ViewSetup {
+    func buildViewHierarchy() {
+        self.view.addSubview(baseView)
+    }
+    
+    func setupConstraints() {
+        baseView.snp.makeConstraints{ make in
+            make.width.equalToSuperview()
+            make.height.equalToSuperview()
+        }
+    }
+    
+    
+}

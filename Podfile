@@ -1,19 +1,33 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
+
+def defauldPods
+  pod 'SnapKit', '4.2.0'
+  pod 'RxSwift', '5.0.1'
+  pod 'ObjectMapper', '3.3.0'
+  pod 'Alamofire', '~> 4.5'
+  pod 'Kingfisher', '~> 4.0'
+end
+
+def testPods
+  pod 'Quick'
+  pod 'Nimble'
+end
 
 target 'SwiftViewCode' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for SwiftViewCode
-
+  #use_frameworks!
+  defauldPods
+  
   target 'SwiftViewCodeTests' do
     inherit! :search_paths
-    # Pods for testing
+    testPods
   end
 
   target 'SwiftViewCodeUITests' do
-    # Pods for testing
+    defauldPods
+    testPods
   end
 
 end

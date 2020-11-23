@@ -1,4 +1,4 @@
-framework module Pods_SwiftViewCode {
+module Pods_SwiftViewCode {
   umbrella header "Pods-SwiftViewCode-umbrella.h"
 
   export *
