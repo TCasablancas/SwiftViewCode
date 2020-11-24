@@ -25,6 +25,8 @@
 		4B75D4FD256C52AD004C562E /* MainTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B75D4FC256C52AD004C562E /* MainTheme.swift */; };
 		4B75D505256C5A85004C562E /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B75D503256C5A85004C562E /* CardViewCell.swift */; };
 		4B75D506256C5A85004C562E /* CardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B75D504256C5A85004C562E /* CardViewCell.xib */; };
+		4B75D50A256D342D004C562E /* CollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B75D509256D342D004C562E /* CollectionViewCell+Extension.swift */; };
+		4B75D50C256D3544004C562E /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B75D50B256D3544004C562E /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		4B75D4FC256C52AD004C562E /* MainTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTheme.swift; sourceTree = "<group>"; };
 		4B75D503256C5A85004C562E /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
 		4B75D504256C5A85004C562E /* CardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewCell.xib; sourceTree = "<group>"; };
+		4B75D509256D342D004C562E /* CollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		4B75D50B256D3544004C562E /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		9C05D3820BCC6822B19F06FB /* Pods-SwiftViewCodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftViewCodeTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftViewCodeTests/Pods-SwiftViewCodeTests.release.xcconfig"; sourceTree = "<group>"; };
 		A26BE9EE8EE8BC8431C19614 /* Pods-SwiftViewCode-SwiftViewCodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftViewCode-SwiftViewCodeUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftViewCode-SwiftViewCodeUITests/Pods-SwiftViewCode-SwiftViewCodeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A75488591D357E1D66EDB18C /* Pods-SwiftViewCodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftViewCodeTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftViewCodeTests/Pods-SwiftViewCodeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,9 +148,11 @@
 			isa = PBXGroup;
 			children = (
 				4B75D4F0256C021A004C562E /* Assets */,
+				4B75D50E256D35A5004C562E /* Cells */,
 				4B75D4EE256C01E7004C562E /* Common */,
 				4B75D4ED256C01DF004C562E /* Controllers */,
 				4B75D4EC256C01D0004C562E /* MainViews */,
+				4B75D507256D2D67004C562E /* Services */,
 				4B75D4F1256C22E5004C562E /* Theme */,
 				4B75D4EF256C020C004C562E /* Views */,
 				4B75D4CA256BFEAB004C562E /* Info.plist */,
@@ -184,6 +190,7 @@
 		4B75D4ED256C01DF004C562E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4B75D50D256D3595004C562E /* View */,
 				4B75D4C0256BFEAB004C562E /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -216,9 +223,8 @@
 		4B75D4F1256C22E5004C562E /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				4B75D508256D3417004C562E /* Extensions */,
 				4B75D4F8256C3C39004C562E /* Base */,
-				4B75D4FE256C59E3004C562E /* Card */,
-				4B75D4F6256C3A05004C562E /* BaseView.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -241,6 +247,38 @@
 				4B75D504256C5A85004C562E /* CardViewCell.xib */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		4B75D507256D2D67004C562E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4B75D508256D3417004C562E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B75D509256D342D004C562E /* CollectionViewCell+Extension.swift */,
+				4B75D50B256D3544004C562E /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4B75D50D256D3595004C562E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B75D4F6256C3A05004C562E /* BaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B75D50E256D35A5004C562E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4B75D4FE256C59E3004C562E /* Card */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		5FD3ADADA0F1D256D14DB853 /* Frameworks */ = {
@@ -457,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B75D50A256D342D004C562E /* CollectionViewCell+Extension.swift in Sources */,
 				4B75D4FB256C3C85004C562E /* ViewSetup.swift in Sources */,
 				4B75D4F5256C294A004C562E /* ConfiguratorProtocol.swift in Sources */,
 				4B75D4FD256C52AD004C562E /* MainTheme.swift in Sources */,
@@ -465,6 +504,7 @@
 				4B75D4F3256C2518004C562E /* BaseViewController.swift in Sources */,
 				4B75D4F7256C3A05004C562E /* BaseView.swift in Sources */,
 				4B75D4BD256BFEAB004C562E /* AppDelegate.swift in Sources */,
+				4B75D50C256D3544004C562E /* Color+Extension.swift in Sources */,
 				4B75D4BF256BFEAB004C562E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

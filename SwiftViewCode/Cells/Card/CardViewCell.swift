@@ -15,4 +15,7 @@ class CardViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
 
+    func configureCell(with: ) {
+        
+    }
 }
