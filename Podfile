@@ -9,6 +9,7 @@ def defauldPods
   pod 'ObjectMapper', '3.3.0'
   pod 'Alamofire', '~> 4.5'
   pod 'Kingfisher', '~> 4.0'
+  pod 'Stripe'
 end
 
 def testPods

@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-SwiftViewCode-SwiftViewCodeUITests/Pods-SwiftViewCode-SwiftViewCodeUITests-resources.sh
+${PODS_ROOT}/Stripe/InternalFrameworks/Stripe3DS2.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle

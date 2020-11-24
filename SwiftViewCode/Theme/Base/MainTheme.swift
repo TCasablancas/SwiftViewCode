@@ -11,5 +11,10 @@ import UIKit
 class MainTheme {
     struct `default` {
         
+        
+        static func cardView(_ view: UIView) {
+            view.layer.cornerRadius = 10
+            view.backgroundColor = .gray
+        }
     }
 }

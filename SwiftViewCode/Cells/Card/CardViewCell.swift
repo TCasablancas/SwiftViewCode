@@ -10,12 +10,14 @@ import UIKit
 import Kingfisher
 
 class CardViewCell: UICollectionViewCell {
-
+    @IBOutlet weak var container: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
     func configureCell(with: ) {
         
+        MainTheme.default.cardView(container)
     }
 }
